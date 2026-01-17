@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Golf - Tap to Keep the Ball in the Air!</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏌️ Flappy Golf ⛳</h1>
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="400" height="600"></canvas>
+            <div id="startScreen" class="overlay">
+                <h2>Flappy Golf</h2>
+                <p>Click or press SPACE to make the golf ball fly!</p>
+                <p>Avoid the golf clubs!</p>
+                <button id="startBtn">Start Game</button>
+            </div>
+            <div id="gameOverScreen" class="overlay hidden">
+                <h2>Game Over!</h2>
+                <p>Score: <span id="finalScore">0</span></p>
+                <p>Best: <span id="bestScore">0</span></p>
+                <button id="restartBtn">Play Again</button>
+            </div>
+        </div>
+        <div class="score-display">
+            <p>Score: <span id="currentScore">0</span></p>
+        </div>
+        <div class="controls">
+            <p>🖱️ Click or press SPACE to jump</p>
+        </div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
